@@ -27,6 +27,7 @@ wget https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/chromeos_s
 
 
 ### Help dumps for the vm and container commands available on chromeos
+```
 $ run_container.sh --help
 USAGE: /usr/bin/run_container.sh [flags] args
 flags:
@@ -85,6 +86,7 @@ Flags:
       --version       Print version number
 
 Use "lxc [command] --help" for more information about a command.
+```
 
 ### References
 
