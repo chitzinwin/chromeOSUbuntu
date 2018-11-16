@@ -42,12 +42,12 @@ read HOSTNAME
 echo "Input ubuntu desktop user name <recomended: same as chromeos username>"
 read USER
 
-sed -i '1c$HOSTNAME' /etc/hostname
+sed -i "1c$HOSTNAME" /etc/hostname
 
 killall -u ubuntu
 groupmod -n $USER ubuntu
 usermod -md /home/$USER -l $USER ubuntu
 usermod -aG users $USER
 loginctl enable-linger $USER
-sed -i 's/ubuntu/$USER/' /etc/sudoers.d/90-cloud-init-users
+sed -i "s/ubuntu/$USER/" /etc/sudoers.d/90-cloud-init-users
 
