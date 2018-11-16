@@ -33,3 +33,21 @@ sed -i -n '2{h;n;G};p' /etc/gtk-3.0/settings.ini
 
 # clean up
 # rm -rf cros-ui-config_0.12_all.deb
+
+HOSTNAME=ubuntu1810
+USER=guest
+
+echo "Input the hostname for this container"
+read HOSTNAME
+echo "Input ubuntu desktop user name <recomended: same as chromeos username>"
+read USER
+
+sed -i '1c$HOSTNAME' /etc/hostname
+
+killall -u ubuntu
+groupmod -n $USER ubuntu
+usermod -md /home/$USER -l $USER ubuntu
+usermod -aG users $USER
+loginctl enable-linger $USER
+sed -i 's/ubuntu/$USER/' /etc/sudoers.d/90-cloud-init-users
+
