@@ -1,7 +1,7 @@
 # chromeOSUbuntu
 Shell file to setup you ubuntu container to integrate with chromeos
 
-# VM commands - basic gentoo VM compiled by google to be small and fast
+### VM commands - basic gentoo VM compiled by google to be small and fast
 vsh dev - get a console for that vm
 vmc start dev - also gets you a console and starts a vm
 vmc stop dev - stop a vm (does not do much)
