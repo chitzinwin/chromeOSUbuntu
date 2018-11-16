@@ -18,8 +18,11 @@ gzip data.tar
 ar r cros-ui-config_0.12_all.deb data.tar.gz
 rm -rf data.tar.gz
 
+apt install .cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland
+
 # ignore any warning messages
-apt install ./cros-ui-config_0.12_all.deb cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland
+echo "### ignore any warning messages ###"
+dpkg -i /cros-ui-config_0.12_all.deb
 
 sed -i 's/Ambiance/CrosAdapta/' /etc/gtk-3.0/settings.ini
 sed -i 's/ubuntu-mono-dark/CrosAdapta/' /etc/gtk-3.0/settings.ini
