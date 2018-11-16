@@ -1,3 +1,15 @@
+HOSTNAME=ubuntu1810
+USER=guest
+
+echo "Input the hostname for this container"
+read HOSTNAME
+echo "Input ubuntu desktop user name <recomended: same as chromeos username>"
+read USER
+
+echo "Using hostname:$HOSTNAME"
+echo "Using username:$USER"
+sleep 3
+
 rm -f cros-ui-config_0.12_all.deb
 apt update
 apt upgrade
@@ -33,14 +45,6 @@ sed -i -n '2{h;n;G};p' /etc/gtk-3.0/settings.ini
 
 # clean up
 # rm -rf cros-ui-config_0.12_all.deb
-
-HOSTNAME=ubuntu1810
-USER=guest
-
-echo "Input the hostname for this container"
-read HOSTNAME
-echo "Input ubuntu desktop user name <recomended: same as chromeos username>"
-read USER
 
 sed -i "1c$HOSTNAME" /etc/hostname
 
