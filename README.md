@@ -1,7 +1,7 @@
 # chromeOSUbuntu
 Shell file to setup you ubuntu container to integrate with chromeos. This document is just a reference for containers and VM commands form chromeos crostini project. You can run Ubuntu, Debian and other linux flavors under chromeos VMs. Chrome os VMs are required to run the containers, the VMs where designed to be fast to boot and secure and have the minal files need to run  lxd containers and integrate with chromeos.
 
-At the moment I am testing all of this on a lenovo chromebook C630, chrome://system	shows my kernel and cpu like this:
+At the moment I am testing all of this on a lYOGA CHROMEBOOK C630, chrome://system	shows my kernel and cpu like this:
 Linux localhost 4.4.141-14567-g26df737f0737 #1 SMP PREEMPT Wed Oct 3 23:24:39 PDT 2018 x86_64 Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz GenuineIntel GNU/Linux
 
 
