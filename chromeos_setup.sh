@@ -1,3 +1,4 @@
+rm -f cros-ui-config_0.12_all.deb
 apt update
 apt upgrade
 echo "deb https://storage.googleapis.com/cros-packages stretch main" > /etc/apt/sources.list.d/cros.list
@@ -16,7 +17,7 @@ gunzip data.tar.gz
 tar f data.tar --delete ./etc/gtk-3.0/settings.ini
 gzip data.tar
 ar r cros-ui-config_0.12_all.deb data.tar.gz
-rm -rf data.tar.gz
+rm -f data.tar.gz
 
 apt install .cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland
 
