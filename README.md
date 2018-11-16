@@ -1,5 +1,5 @@
 # chromeOSUbuntu
-Shell file to setup you ubuntu container to integrate with chromeos
+Shell file to setup you ubuntu container to integrate with chromeos. This document is just a reference for containers and VM commands form chromeos crostini project. You can run Ubuntu, Debian and other linux flavors under chromeos VMs. Chrome os VMs are required to run the containers, the VMs where designed to be fast to boot and secure and have the minal files need to run  lxd containers and integrate with chromeos.
 
 ### VM commands - basic gentoo VM compiled by google to be small and fast
 vsh dev - get a console for that vm
