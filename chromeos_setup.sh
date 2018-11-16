@@ -23,7 +23,7 @@ apt install cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp c
 
 # ignore any warning messages
 echo "### ignore any warning messages ###"
-dpkg -i /cros-ui-config_0.12_all.deb
+dpkg -i ./cros-ui-config_0.12_all.deb
 
 sed -i 's/Ambiance/CrosAdapta/' /etc/gtk-3.0/settings.ini
 sed -i 's/ubuntu-mono-dark/CrosAdapta/' /etc/gtk-3.0/settings.ini
