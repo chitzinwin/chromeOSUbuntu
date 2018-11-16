@@ -6,29 +6,36 @@ Linux localhost 4.4.141-14567-g26df737f0737 #1 SMP PREEMPT Wed Oct 3 23:24:39 PD
 
 
 ### VM commands - basic gentoo VM compiled by google to be small and fast
+```
 vsh dev - get a console for that vm
 vmc start dev - also gets you a console and starts a vm
 vmc stop dev - stop a vm (does not do much)
 vmc destroy dev - (only works sometimes)
 vmc list
+```
 
 ### Inside the VM - in a vm you can create multiple containers
+```
 run_container.sh --container_name=devCon --user=lafaspot
 lxc list - list all VMs
 lxc image list - list all VM images on the box
+```
 
 ### Create a debian stable vm, using chromeos utility shell file, that provides better integration with chromeos.
+```
 run_container.sh --container_name=devCon --user=USERID
-
+```
 ### Ubuntu setup
+```
 lxc image copy ubuntu:18.10 local: --alias ubuntu1810
 lxc launch ubuntu1810 cosmic
 lxc exec cosmic -- bash
-
-### Now to setup Ubuntu with some chromeos integration here some steps
-
-wget https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/chromeos_setup.sh; bash chromeos_setup.sh
-
+```
+### Now to setup Ubuntu with some chromeos integration
+The command below download the chromeos_setup.sh file from this project and executes the script on your ubuntu container, and installs the google required packages to integrate Ubuntu better with chromeos.
+```
+rm chromeos_setup.sh; wget https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/chromeos_setup.sh; bash chromeos_setup.sh
+```
 
 ### Help dumps for the vm and container commands available on chromeos
 ```
