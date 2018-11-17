@@ -21,17 +21,17 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551
 apt update
 apt install binutils
 
-# echo "### ignore any warning messages ###"
+echo "### ignore any warning messages ###"
 # ignore any warning messages
-# apt download cros-ui-config 
-# ar x cros-ui-config_0.12_all.deb data.tar.gz
-# gunzip data.tar.gz
-# tar f data.tar --delete ./etc/gtk-3.0/settings.ini
-# gzip data.tar
-# ar r cros-ui-config_0.12_all.deb data.tar.gz
-# rm -f data.tar.gz
+apt download cros-ui-config 
+ar x cros-ui-config_0.12_all.deb data.tar.gz
+gunzip data.tar.gz
+tar f data.tar --delete ./etc/gtk-3.0/settings.ini
+gzip data.tar
+ar r cros-ui-config_0.12_all.deb data.tar.gz
+rm -f data.tar.gz
 
-apt install cros-ui-config cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland
+apt install ./cros-ui-config_0.12_all.deb cros-ui-config cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland
 
 # ignore any warning messages
 # echo "### ignore any warning messages ###"
