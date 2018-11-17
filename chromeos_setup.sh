@@ -31,7 +31,7 @@ gzip data.tar
 ar r cros-ui-config_0.12_all.deb data.tar.gz
 rm -f data.tar.gz
 
-apt install cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland
+apt install cros-ui-config cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland
 
 # ignore any warning messages
 echo "### ignore any warning messages ###"
