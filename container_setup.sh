@@ -10,6 +10,9 @@ lxc exec $CONTAINER_NAME -- rm /tmp/chromeos_setup.sh
 lxc exec $CONTAINER_NAME -- curl -o /tmp/chromeos_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/chromeos_setup.sh
 lxc exec $CONTAINER_NAME -- bash /tmp/chromeos_setup.sh
 lxc list
+sleep 5
+lxc start $CONTAINER_NAME
+sleep 5
 
 echo "Use the following command to login to you container"
 echo "lxc exec $CONTAINER_NAME -- su --login USER"
