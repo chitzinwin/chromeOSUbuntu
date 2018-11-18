@@ -1,5 +1,10 @@
 CONTAINER_NAME=cosmic
 
+echo "Input the container name for ubuntu 18.10"
+read CONTAINER_NAME
+echo "Using container:$CONTAINER_NAME"
+sleep 3
+
 lxc image copy ubuntu:18.10 local: --alias ubuntu1810
 lxc stop --force $CONTAINER_NAME
 lxc delete $CONTAINER_NAME
