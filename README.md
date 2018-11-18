@@ -1,11 +1,11 @@
 # chromeOSUbuntu
-Shell file to setup you ubuntu container to integrate with chromeos. This document is just a reference for containers and VM commands form chromeos crostini project. You can run Ubuntu, Debian and other linux flavors under chromeos VMs. Chrome os VMs are required to run the containers, the VMs where designed to be fast to boot and secure and have the minal files need to run  lxd containers and integrate with chromeos.
+Shell file to setup a ubuntu container on chromeos. This document is a reference how to use containers and VMs commands on chromeos crostini project. You can run Ubuntu, Debian and other linux flavors under chromeos VMs. Chromeos VMs are required to run the containers, the VMs where designed to boot fast and be secure and have the minimal files needed to run lxd containers and integrate with chromeos.
 
-At the moment I am testing all of this on a lYOGA CHROMEBOOK C630, chrome://system	shows my kernel and cpu like this:
+My test machine is a YOGA CHROMEBOOK C630, and chrome://system	shows my kernel and cpu like this:
 Linux localhost 4.4.141-14567-g26df737f0737 #1 SMP PREEMPT Wed Oct 3 23:24:39 PDT 2018 x86_64 Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz GenuineIntel GNU/Linux
 
 ### Instructions to setup Ubuntu with chromeos integration
-The command below download the container_setup.sh and chromeos_setup.sh file from this project and executes the script on your chromeos VM and create a ubuntu container nemade "cosmic" and installs the google required packages to integrate Ubuntu better with chromeos on the container.
+The command below will download the container_setup.sh and chromeos_setup.sh file from this project and execute the scripts on your chromeos VM and create a ubuntu container "cosmic" and will install the google required packages to integrate Ubuntu better with chromeos on the ubuntu container.
 
 1. press Ctrl+alt+t
 2. vmc list
