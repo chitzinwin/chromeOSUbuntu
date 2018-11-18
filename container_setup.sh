@@ -10,5 +10,5 @@ lxc exec cosmic -- bash /tmp/chromeos_setup.sh
 lxc list
 
 # to make the ubuntu the default container
-# lxc stop penguin; lxc rename penguin orig_penguin; lxc rename cosmic penguin
+# lxc stop penguin; lxc rename penguin origPenguin; lxc rename cosmic penguin
 
