@@ -8,9 +8,8 @@ Linux localhost 4.4.141-14567-g26df737f0737 #1 SMP PREEMPT Wed Oct 3 23:24:39 PD
 The command below will download the container_setup.sh and chromeos_setup.sh file from this project and execute the scripts on your chromeos VM and create a ubuntu container "cosmic" and will install the google required packages to integrate Ubuntu better with chromeos on the ubuntu container.
 
 1. press Ctrl+alt+t
-2. vmc list
-3. vsh termina 
-4. run command below
+2. vsh termina 
+3. run command below
 ```
 rm /tmp/container_setup.sh;
 curl -o /tmp/container_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/container_setup.sh;
