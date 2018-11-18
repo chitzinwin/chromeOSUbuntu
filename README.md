@@ -30,11 +30,22 @@ run_container.sh --container_name=devCon --user=USERID
 lxc image copy ubuntu:18.10 local: --alias ubuntu1810
 lxc launch ubuntu1810 cosmic
 lxc exec cosmic -- bash
+
 ```
 ### Now to setup Ubuntu with some chromeos integration
 The command below download the chromeos_setup.sh file from this project and executes the script on your ubuntu container, and installs the google required packages to integrate Ubuntu better with chromeos.
 ```
 rm chromeos_setup.sh; wget https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/chromeos_setup.sh; bash chromeos_setup.sh
+```
+### Shutdown the new container
+```
+shutdown -h now
+```
+
+### remove container
+```
+lxc stop --force cosmic
+lxc delete cosmic
 ```
 
 ### Help dumps for the vm and container commands available on chromeos
