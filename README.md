@@ -15,6 +15,8 @@ The command below download the container_setup.sh and chromeos_setup.sh file fro
 rm /tmp/container_setup.sh; curl -o /tmp/container_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/container_setup.sh; bash /tmp/container_setup.sh
 ```
 
+If you run the script a second time the cosmic container will be deleted and recreated. You can run it as many times as needed.
+
 ## Helpfull commands for vsh, vmc, lxc
 
 ### VM commands - basic gentoo VM compiled by google to be small and fast
