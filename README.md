@@ -4,6 +4,13 @@ Shell file to setup you ubuntu container to integrate with chromeos. This docume
 At the moment I am testing all of this on a lYOGA CHROMEBOOK C630, chrome://system	shows my kernel and cpu like this:
 Linux localhost 4.4.141-14567-g26df737f0737 #1 SMP PREEMPT Wed Oct 3 23:24:39 PDT 2018 x86_64 Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz GenuineIntel GNU/Linux
 
+### Now to setup Ubuntu with chromeos integration
+The command below download the container_setup.sh and chromeos_setup.sh file from this project and executes the script on your chromeos VM and create a ubuntu container nemade "cosmic" and installs the google required packages to integrate Ubuntu better with chromeos on the container.
+```
+rm /tmp/container_setup.sh; curl -o /tmp/container_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/container_setup.sh; bash /tmp/container_setup.sh
+```
+
+## Helpfull commands for vsh, vmc, lxc
 
 ### VM commands - basic gentoo VM compiled by google to be small and fast
 ```
@@ -25,18 +32,15 @@ lxc image list - list all VM images on the box
 ```
 run_container.sh --container_name=devCon --user=USERID
 ```
-### Ubuntu setup
+
+### Setup a new container
 ```
 lxc image copy ubuntu:18.10 local: --alias ubuntu1810
 lxc launch ubuntu1810 cosmic
 lxc exec cosmic -- bash
 
 ```
-### Now to setup Ubuntu with some chromeos integration
-The command below download the chromeos_setup.sh file from this project and executes the script on your ubuntu container, and installs the google required packages to integrate Ubuntu better with chromeos.
-```
-rm /tmp/container_setup.sh; curl -o /tmp/container_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/container_setup.sh; bash /tmp/container_setup.sh
-```
+
 ### Shutdown the new container and restart it
 ```
 shutdown -h now
