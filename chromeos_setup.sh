@@ -19,7 +19,7 @@ if [ -f /dev/.cros_milestone ]; then sudo sed -i "s?packages?packages/$(cat /dev
 
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551
 apt update
-apt install binutils adwaita-icon-theme-full
+apt install binutils
 
 echo "### ignore any warning messages ###"
 # ignore any warning messages
@@ -33,7 +33,7 @@ rm -f data.tar.gz
 
 apt install ./cros-ui-config_0.12_all.deb cros-ui-config cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sftp cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland
 # packages available in debian google install
-apt install adwaita-icon-theme apt-transport-https apt-utils at-spi2-core bash-completion ca-certificates cpp cpp-6 cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-ui-config cros-unattended-upgrades cros-wayland curl dbus-x11 dconf-cli dconf-gsettings-backend dconf-service desktop-file-utils dh-python distro-info-data fontconfig fontconfig-config fonts-croscore fonts-dejavu-core fonts-roboto fonts-roboto-hinted glib-networking glib-networking-common glib-networking-services gnome-icon-theme gsettings-desktop-schemas gtk-update-icon-cache hicolor-icon-theme i965-va-driver less lsb-release mesa-va-drivers mesa-vdpau-drivers mime-support openssl perl perl-modules perl-openssl-defaults policykit-1 publicsuffix pulseaudio pulseaudio-utils python-apt-common python3 python3-apt python3-minimal readline-common rename rtkit sgml-base shared-mime-info sudo tcpd ucf unattended-upgrades unzip va-driver-all vdpau-driver-all x11-common x11-utils x11-xserver-utils xdg-user-dirs xdg-utils xkb-data xml-core xz-utils
+apt install adwaita-icon-theme-full adwaita-icon-theme apt-transport-https apt-utils at-spi2-core bash-completion ca-certificates cpp cpp-6 cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-ui-config cros-unattended-upgrades cros-wayland curl dbus-x11 dconf-cli dconf-gsettings-backend dconf-service desktop-file-utils dh-python distro-info-data fontconfig fontconfig-config fonts-croscore fonts-dejavu-core fonts-roboto fonts-roboto-hinted glib-networking glib-networking-common glib-networking-services gnome-icon-theme gsettings-desktop-schemas gtk-update-icon-cache hicolor-icon-theme i965-va-driver less lsb-release mesa-va-drivers mesa-vdpau-drivers mime-support openssl perl perl-modules perl-openssl-defaults policykit-1 publicsuffix pulseaudio pulseaudio-utils python-apt-common python3 python3-apt python3-minimal readline-common rename rtkit sgml-base shared-mime-info sudo tcpd ucf unattended-upgrades unzip va-driver-all vdpau-driver-all x11-common x11-utils x11-xserver-utils xdg-user-dirs xdg-utils xkb-data xml-core xz-utils
 
 # ignore any warning messages
 # echo "### ignore any warning messages ###"
