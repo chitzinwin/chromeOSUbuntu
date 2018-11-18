@@ -35,7 +35,7 @@ lxc exec cosmic -- bash
 ### Now to setup Ubuntu with some chromeos integration
 The command below download the chromeos_setup.sh file from this project and executes the script on your ubuntu container, and installs the google required packages to integrate Ubuntu better with chromeos.
 ```
-rm container_setup.sh; wget https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/container_setup.sh; bash container_setup.sh
+rm container_setup.sh; curl https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/container_setup.sh; bash container_setup.sh
 ```
 ### Shutdown the new container and restart it
 ```
