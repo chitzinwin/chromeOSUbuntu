@@ -19,7 +19,7 @@ if [ -f /dev/.cros_milestone ]; then sudo sed -i "s?packages?packages/$(cat /dev
 
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551
 apt update
-apt install binutils
+apt install binutils adwaita-icon-theme-full
 
 echo "### ignore any warning messages ###"
 # ignore any warning messages
