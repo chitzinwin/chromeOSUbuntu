@@ -11,3 +11,4 @@ lxc list
 
 # to make the ubuntu the default container
 # lxc stop penguin; lxc rename penguin orig_penguin; lxc rename cosmic penguin
+
