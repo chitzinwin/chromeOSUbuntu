@@ -40,7 +40,7 @@ rm chromeos_setup.sh; wget https://raw.githubusercontent.com/lafaspot/chromeOSUb
 ### Shutdown the new container and restart it
 ```
 shutdown -h now
-lxc start ubuntu1810
+lxc start cosmic
 ```
 
 ### remove container
