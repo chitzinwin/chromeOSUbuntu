@@ -33,6 +33,7 @@ vmc list
 run_container.sh --container_name=devCon --user=lafaspot
 lxc list - list all VMs
 lxc image list - list all VM images on the box
+lxc remote list = list all remote indexes
 ```
 
 ### Create a debian stable vm, using chromeos utility shell file, that provides better integration with chromeos.
