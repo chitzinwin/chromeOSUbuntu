@@ -26,6 +26,7 @@ GOOGLE_PKG=binutils adwaita-icon-theme-full adwaita-icon-theme apt-transport-htt
 EXTRA_PKG=firefox gimp inkscape
 CROSTINI_PKG=cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland cros-sftp
 
+echo "apt install $GOOGLE_PKG $EXTRA_PKG"
 apt install $GOOGLE_PKG $EXTRA_PKG
 
 echo "### ignore any warning messages ###"
@@ -40,6 +41,7 @@ rm -f data.tar.gz
 
 # ignore any warning messages
 # echo "### ignore any warning messages ###"
+echo "apt install ./cros-ui-config_0.12_all.deb $CROSTINI_PKG"
 apt install ./cros-ui-config_0.12_all.deb $CROSTINI_PKG
 
 sed -i 's/Ambiance/CrosAdapta/' /etc/gtk-3.0/settings.ini
