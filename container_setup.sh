@@ -1,6 +1,6 @@
 CONTAINER_NAME=cosmic
 
-echo "Input the container name for ubuntu 18.10, recomend name ($CONTAINER_NAME)"
+echo "Input the container name for ubuntu 18.10 <recomended: $CONTAINER_NAME>"
 read CONTAINER_NAME
 echo "Using container:$CONTAINER_NAME"
 sleep 3
