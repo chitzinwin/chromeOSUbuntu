@@ -120,6 +120,14 @@ Flags:
       --version       Print version number
 
 Use "lxc [command] --help" for more information about a command.
+
+$ vmc --help
+vmc [ start <name> | stop <name> | destroy <name> | export <vm name> <file name> [removable storage name] | list ]  
+  Start or stop a VM.
+
+$ vsh --help
+vsh <name>  
+  Connect to a shell inside the VM <name>.
 ```
 
 ### References
