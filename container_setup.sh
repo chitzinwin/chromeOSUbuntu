@@ -7,3 +7,4 @@ sleep 5
 lxc exec cosmic -- rm /tmp/chromeos_setup.sh
 lxc exec cosmic -- curl -o /tmp/chromeos_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/chromeos_setup.sh
 lxc exec cosmic -- bash /tmp/chromeos_setup.sh
+lxc list
