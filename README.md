@@ -37,9 +37,10 @@ The command below download the chromeos_setup.sh file from this project and exec
 ```
 rm chromeos_setup.sh; wget https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/chromeos_setup.sh; bash chromeos_setup.sh
 ```
-### Shutdown the new container
+### Shutdown the new container and restart it
 ```
 shutdown -h now
+lxc start ubuntu1810
 ```
 
 ### remove container
