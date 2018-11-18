@@ -4,8 +4,13 @@ Shell file to setup you ubuntu container to integrate with chromeos. This docume
 At the moment I am testing all of this on a lYOGA CHROMEBOOK C630, chrome://system	shows my kernel and cpu like this:
 Linux localhost 4.4.141-14567-g26df737f0737 #1 SMP PREEMPT Wed Oct 3 23:24:39 PDT 2018 x86_64 Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz GenuineIntel GNU/Linux
 
-### Now to setup Ubuntu with chromeos integration
+### Instructions to setup Ubuntu with chromeos integration
 The command below download the container_setup.sh and chromeos_setup.sh file from this project and executes the script on your chromeos VM and create a ubuntu container nemade "cosmic" and installs the google required packages to integrate Ubuntu better with chromeos on the container.
+
+1. press Ctrl+alt+t
+2. vmc list
+3. vsh termina 
+4. run command below
 ```
 rm /tmp/container_setup.sh; curl -o /tmp/container_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/container_setup.sh; bash /tmp/container_setup.sh
 ```
