@@ -21,10 +21,10 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551
 apt update
 
 # packages available in debian google install
-apt install binutils
-apt install binutils adwaita-icon-theme-full adwaita-icon-theme apt-transport-https apt-utils at-spi2-core bash-completion ca-certificates cpp cpp-6 curl dbus-x11 dconf-cli dconf-gsettings-backend dconf-service desktop-file-utils dh-python distro-info-data fontconfig fontconfig-config fonts-croscore fonts-dejavu-core fonts-roboto fonts-roboto-hinted glib-networking glib-networking-common glib-networking-services gnome-icon-theme gsettings-desktop-schemas gtk-update-icon-cache hicolor-icon-theme i965-va-driver less lsb-release mesa-va-drivers mesa-vdpau-drivers mime-support openssl perl perl-modules perl-openssl-defaults policykit-1 publicsuffix pulseaudio pulseaudio-utils python-apt-common python3 python3-apt python3-minimal readline-common rename rtkit sgml-base shared-mime-info sudo tcpd ucf unattended-upgrades unzip va-driver-all vdpau-driver-all x11-common x11-utils x11-xserver-utils xdg-user-dirs xdg-utils xkb-data xml-core xz-utils
+apt -y install binutils
+apt -y install binutils adwaita-icon-theme-full adwaita-icon-theme apt-transport-https apt-utils at-spi2-core bash-completion ca-certificates cpp cpp-6 curl dbus-x11 dconf-cli dconf-gsettings-backend dconf-service desktop-file-utils dh-python distro-info-data fontconfig fontconfig-config fonts-croscore fonts-dejavu-core fonts-roboto fonts-roboto-hinted glib-networking glib-networking-common glib-networking-services gnome-icon-theme gsettings-desktop-schemas gtk-update-icon-cache hicolor-icon-theme i965-va-driver less lsb-release mesa-va-drivers mesa-vdpau-drivers mime-support openssl perl perl-modules perl-openssl-defaults policykit-1 publicsuffix pulseaudio pulseaudio-utils python-apt-common python3 python3-apt python3-minimal readline-common rename rtkit sgml-base shared-mime-info sudo tcpd ucf unattended-upgrades unzip va-driver-all vdpau-driver-all x11-common x11-utils x11-xserver-utils xdg-user-dirs xdg-utils xkb-data xml-core xz-utils
 # extra packages
-apt install firefox gimp inkscape
+apt -y install firefox gimp inkscape
 
 echo "### ignore any warning messages ###"
 # ignore any warning messages
@@ -39,7 +39,7 @@ rm -f data.tar.gz
 # ignore any warning messages
 # echo "### ignore any warning messages ###"
 echo "apt install ./cros-ui-config_0.12_all.deb $CROSTINI_PKG"
-apt install ./cros-ui-config_0.12_all.deb cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland cros-sftp
+apt -y install ./cros-ui-config_0.12_all.deb cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland cros-sftp
 
 sed -i 's/Ambiance/CrosAdapta/' /etc/gtk-3.0/settings.ini
 sed -i 's/ubuntu-mono-dark/CrosAdapta/' /etc/gtk-3.0/settings.ini
