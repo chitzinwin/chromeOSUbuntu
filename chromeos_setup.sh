@@ -63,6 +63,5 @@ loginctl enable-linger $USER
 sed -i "s/ubuntu/$USER/" /etc/sudoers.d/90-cloud-init-users
 
 loginctl enable-linger $USER
-echo "Shutswon the container in progress, type 'lxd exec -- bash' to login into the container"
 sleep 3
-shutdown -h now
+
