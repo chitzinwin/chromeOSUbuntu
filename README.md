@@ -4,6 +4,14 @@ Shell file to setup a ubuntu container on chromeos. This document is a reference
 My test machine is a YOGA CHROMEBOOK C630, and chrome://system	shows my kernel and cpu like this:
 Linux localhost 4.4.141-14567-g26df737f0737 #1 SMP PREEMPT Wed Oct 3 23:24:39 PDT 2018 x86_64 Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz GenuineIntel GNU/Linux
 
+ii  cros-sftp                         0.13                              all          SFTP service files for CrOS integration This package
+ii  openssh-sftp-server               1:7.4p1-10+deb9u4                 amd64        secure shell (SSH) sftp server module, for SFTP access from remote machines
+lafaspot@google:~$ dpkg -l |grep ssh
+ii  libssh2-1:amd64                   1.7.0-1                           amd64        SSH2 client-side library
+ii  openssh-client                    1:7.4p1-10+deb9u4                 amd64        secure shell (SSH) client, for secure access to remote machines
+ii  openssh-server                    1:7.4p1-10+deb9u4                 amd64        secure shell (SSH) server, for secure access from remote machines
+ii  openssh-sftp-server               1:7.4p1-10+deb9u4                 amd64        secure shell (SSH) sftp server module, for SFTP access from remote machines
+
 ### Instructions to setup Ubuntu with chromeos integration
 The command below will download the container_setup.sh and chromeos_setup.sh file from this project and execute the scripts on your chromeos VM and create a ubuntu container "cosmic" and will install the google required packages to integrate Ubuntu better with chromeos on the ubuntu container.
 
