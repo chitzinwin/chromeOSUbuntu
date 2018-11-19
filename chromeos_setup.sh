@@ -27,6 +27,7 @@ EXTRA_PKG=firefox gimp inkscape
 CROSTINI_PKG=cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland cros-sftp
 
 echo "apt install $GOOGLE_PKG $EXTRA_PKG"
+apt install binutils
 apt install $GOOGLE_PKG $EXTRA_PKG
 
 echo "### ignore any warning messages ###"
