@@ -12,7 +12,7 @@ lxc launch focal $CONTAINER_NAME
 echo "Ignore warning messages"
 sleep 5
 lxc exec $CONTAINER_NAME -- rm /tmp/chromeos_setup.sh
-lxc exec $CONTAINER_NAME -- curl -o /tmp/chromeos_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/chromeos_setup.sh
+lxc exec $CONTAINER_NAME -- curl -o /tmp/chromeos_setup.sh https://raw.githubusercontent.com/chitzinwin/chromeOSUbuntu/master/chromeos_setup.sh
 lxc exec $CONTAINER_NAME -- bash /tmp/chromeos_setup.sh
 
 echo "Shutdwon the container in progress, type 'lxd exec -- bash' to login into the container"
