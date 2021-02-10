@@ -5,10 +5,10 @@ read CONTAINER_NAME
 echo "Using container:$CONTAINER_NAME"
 sleep 3
 
-lxc image copy ubuntu:18.10 local: --alias ubuntu1810
+lxc image copy ubuntu:20.04 local: --alias focal
 lxc stop --force $CONTAINER_NAME
 lxc delete $CONTAINER_NAME
-lxc launch ubuntu1810 $CONTAINER_NAME
+lxc launch focal $CONTAINER_NAME
 echo "Ignore warning messages"
 sleep 5
 lxc exec $CONTAINER_NAME -- rm /tmp/chromeos_setup.sh
