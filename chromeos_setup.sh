@@ -1,5 +1,5 @@
 HOSTNAME=penguin
-USER=guest
+USER=winc
 
 echo "Input the hostname for this container <recomended: penguin>"
 read HOSTNAME
