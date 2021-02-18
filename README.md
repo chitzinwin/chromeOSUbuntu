@@ -20,7 +20,7 @@ The command below will download the container_setup.sh and chromeos_setup.sh fil
 3. run command below
 ```
 rm /tmp/container_setup.sh;
-curl -o /tmp/container_setup.sh https://raw.githubusercontent.com/lafaspot/chromeOSUbuntu/master/container_setup.sh;
+curl -o /tmp/container_setup.sh https://raw.githubusercontent.com/chitzinwin/chromeOSUbuntu/master/container_setup.sh;
 bash /tmp/container_setup.sh
 ```
 
