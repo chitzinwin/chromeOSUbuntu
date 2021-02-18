@@ -40,7 +40,8 @@ rm -f data.tar.gz
 # ignore any warning messages
 # echo "### ignore any warning messages ###"
 echo "apt install ./cros-ui-config_0.12_all.deb $CROSTINI_PKG"
-apt -y install ./cros-ui-config_0.12_all.deb cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland cros-sftp
+#apt -y install ./cros-ui-config_0.12_all.deb cros-adapta cros-apt-config cros-garcon cros-guest-tools cros-sommelier cros-sommelier-config cros-sudo-config cros-systemd-overrides cros-unattended-upgrades cros-wayland cros-sftp
+apt-get -y install cros-guest-tools ./cros-ui-config_0.12_all.deb < /dev/null
 
 sed -i 's/Ambiance/CrosAdapta/' /etc/gtk-3.0/settings.ini
 sed -i 's/ubuntu-mono-dark/CrosAdapta/' /etc/gtk-3.0/settings.ini
