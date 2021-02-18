@@ -1,4 +1,4 @@
-CONTAINER_NAME=penguin
+CONTAINER_NAME=comic
 
 echo "Input the container name for ubuntu 18.10 <recomended: $CONTAINER_NAME>"
 read CONTAINER_NAME
