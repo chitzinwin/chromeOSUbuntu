@@ -1,10 +1,10 @@
 HOSTNAME=penguin
 USER=winc
 
-echo "Input the hostname for this container <recomended: penguin>"
-read HOSTNAME
-echo "Input ubuntu desktop user name <recomended: same as chromeos username>"
-read USER
+#echo "Input the hostname for this container <recomended: penguin>"
+#read HOSTNAME
+#echo "Input ubuntu desktop user name <recomended: same as chromeos username>"
+#read USER
 
 echo "Using hostname:$HOSTNAME"
 echo "Using username:$USER"
