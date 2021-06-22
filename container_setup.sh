@@ -1,13 +1,13 @@
 CONTAINER_NAME=penguin
 
-echo "Input the container name for ubuntu 18.10 <recomended: $CONTAINER_NAME>"
-read CONTAINER_NAME
-echo "Using container:$CONTAINER_NAME"
-sleep 3
+#echo "Input the container name for ubuntu 18.10 <recomended: $CONTAINER_NAME>"
+#read CONTAINER_NAME
+#echo "Using container:$CONTAINER_NAME"
+#sleep 3
 
 lxc image copy ubuntu:20.04 local: --alias focal
 lxc stop --force $CONTAINER_NAME
-lxc delete $CONTAINER_NAME
+#lxc delete $CONTAINER_NAME
 lxc launch focal $CONTAINER_NAME
 echo "Ignore warning messages"
 sleep 5
