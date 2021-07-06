@@ -5,7 +5,8 @@ CONTAINER_NAME=penguin
 #echo "Using container:$CONTAINER_NAME"
 #sleep 3
 
-lxc image copy ubuntu:20.04 local: --alias focal
+lxc image copy ubuntu:20.04 local: 
+lxc image alias create focal b9e93652ee67      
 #lxc stop --force $CONTAINER_NAME
 #lxc delete $CONTAINER_NAME
 lxc launch focal $CONTAINER_NAME
