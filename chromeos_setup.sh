@@ -11,8 +11,8 @@ echo "Using username:$USER"
 sleep 3
 
 rm -f cros-ui-config_0.12_all.deb
-apt update
-apt upgrade
+apt update -y
+apt upgrade -y
 echo "deb https://storage.googleapis.com/cros-packages stretch main" > /etc/apt/sources.list.d/cros.list
 
 if [ -f /dev/.cros_milestone ]; then sudo sed -i "s?packages?packages/$(cat /dev/.cros_milestone)?" /etc/apt/sources.list.d/cros.list; fi
