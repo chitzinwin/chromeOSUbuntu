@@ -6,7 +6,7 @@ CONTAINER_NAME=penguin
 #sleep 3
 
 lxc image copy ubuntu:20.04 local: --alias focal
-lxc stop --force $CONTAINER_NAME
+#lxc stop --force $CONTAINER_NAME
 #lxc delete $CONTAINER_NAME
 lxc launch focal $CONTAINER_NAME
 echo "Ignore warning messages"
